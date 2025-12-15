@@ -438,20 +438,12 @@ const initGallery = () => {
             // description: 'Complete redesign of the luxury fashion floor with modern minimalist concept. Implemented strategic layout changes that resulted in 60% increase in sales.',
             subcategories: {
                 'All': [
-                    'https://i.imgur.com/peO4Kqn.png',
-                    'https://i.imgur.com/ODk6NJb.png',
-                    'https://i.imgur.com/iYQUCjk.png',
-                    'https://i.imgur.com/WOgCqTU.png',
-                    'https://i.imgur.com/ef1ejUW.jpeg'
-                ],
-                'Graphics': [
-                    'https://i.imgur.com/peO4Kqn.png',
-                    'https://i.imgur.com/ODk6NJb.png'
-                ],
-                'Illustrations': [
-                    'https://i.imgur.com/iYQUCjk.png',
-                    'https://i.imgur.com/WOgCqTU.png',
-                    'https://i.imgur.com/ef1ejUW.jpeg'
+                    'https://i.imgur.com/6mAWKN5.png',
+                    'https://i.imgur.com/xLNH0Tr.png',
+                    'https://i.imgur.com/uaWChEp.png',
+                    'https://i.imgur.com/GhLKs87.png',
+                    'https://i.imgur.com/fs69mdQ.png',
+                    'https://i.imgur.com/P7sU6nc.png'
                 ]
             },
             images: [] // This will be populated dynamically
