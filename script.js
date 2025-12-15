@@ -133,8 +133,7 @@ const createMobileMenu = () => {
     });
 };
 
-// Initialize mobile menu
-document.addEventListener('DOMContentLoaded', createMobileMenu);
+// Mobile menu initialized in consolidated DOMContentLoaded below
 
 // ===== EFEK PARALLAX =====
 // Update the Scroll Animation Observer
@@ -307,11 +306,7 @@ const addStyles = () => {
     document.head.appendChild(style);
 };
 
-// Make sure loading screen is initialized properly
-document.addEventListener('DOMContentLoaded', () => {
-    addStyles();
-    initLoadingScreen();
-});
+// Loading screen initialized in consolidated DOMContentLoaded below
 
 // ===== GALERI PROYEK =====
 // Inisialisasi dan konfigurasi galeri
@@ -635,10 +630,7 @@ const initGallery = () => {
     });
 };
 
-// Initialize gallery
-document.addEventListener('DOMContentLoaded', () => {
-    initGallery();
-});
+// Gallery initialized in consolidated DOMContentLoaded below
 
 // Theme Toggle Functionality
 const initThemeToggle = () => {
@@ -665,8 +657,15 @@ const initThemeToggle = () => {
     });
 };
 
-// Initialize theme toggle
+// Theme toggle initialized in consolidated DOMContentLoaded below
+
+// ===== CONSOLIDATED INITIALIZATION =====
+// Single DOMContentLoaded listener for better performance
 document.addEventListener('DOMContentLoaded', () => {
+    addStyles();
+    initLoadingScreen();
+    createMobileMenu();
+    initGallery();
     initThemeToggle();
 });
 

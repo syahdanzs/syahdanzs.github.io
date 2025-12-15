@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://i.imgur.com https://upload.wikimedia.org data:; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src https://cdnjs.cloudflare.com; script-src 'self' 'unsafe-inline';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Portfolio</title>
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://i.imgur.com" crossorigin>
+    <link rel="preconnect" href="https://upload.wikimedia.org" crossorigin>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <!-- ===== LOADING SCREEN ===== -->
@@ -47,8 +53,8 @@
             <h4 class="hidden slide-right">based in Jakarta, Indonesia.</h4>
             <p class="hero-description hidden">This site is currently in the process of becoming awesome, so please pardon the mess!</p>
             <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/syahdan-z-s-478749246" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/syahdanzs/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </section>
@@ -60,7 +66,7 @@
         <div class="projects-grid">
             <div class="project-card" data-project="cotton:on">
                 <div class="project-card-image">
-                    <img src="https://i.imgur.com/uKEhiwW.jpeg" alt="Cotton:On">
+                    <img src="https://i.imgur.com/uKEhiwW.jpeg" alt="Cotton:On" loading="lazy" width="400" height="220">
                 </div>
                 <h3>Cotton:On Store</h3>
                 <!-- <p>Seasonal Styling.</p> -->
@@ -73,8 +79,7 @@
             </div>
             <div class="project-card" data-project="flyingtiger">
                 <div class="project-card-image">
-                    <!-- <img src="https://i.imgur.com/2c7KUea.jpeg" alt="Flying Tiger"> -->
-                    <img src="https://i.imgur.com/sZ1QfrV.jpeg" alt="Flying Tiger">
+                    <img src="https://i.imgur.com/sZ1QfrV.jpeg" alt="Flying Tiger" loading="lazy" width="400" height="220">
                 </div>
                 <h3>Flying Tiger Store</h3>
                 <!-- <p>Visual Merchandising Execution.</p> -->
@@ -87,7 +92,7 @@
             </div>
             <div class="project-card" data-project="designs">
                 <div class="project-card-image">
-                    <img src="https://i.imgur.com/peO4Kqn.png" alt="Designs">
+                    <img src="https://i.imgur.com/peO4Kqn.png" alt="Designs" loading="lazy" width="400" height="220">
                 </div>
                 <h3>Designs</h3>
                 <div class="project-links">
@@ -104,7 +109,7 @@
             <div class="service-card">
                 <i class="fa-regular fa-window-maximize"></i>
                 <h3>Window Display</h3>
-                <img src="https://i.imgur.com/aRAMLsa.jpeg" alt="Window Display">
+                <img src="https://i.imgur.com/aRAMLsa.jpeg" alt="Window Display" loading="lazy" width="300" height="200">
                 <div class="service-details">
                     <ul>
                         <li>Seasonal Window Concepts</li>
@@ -118,7 +123,7 @@
             <div class="service-card">
                 <i class="fa-regular fa-window-maximize"></i>
                 <h3>Poster Display</h3>
-                <img src="https://i.imgur.com/QcBog4Y.jpeg" alt="Poster Display">
+                <img src="https://i.imgur.com/QcBog4Y.jpeg" alt="Poster Display" loading="lazy" width="300" height="200">
                 <div class="service-details">
                     <ul>
                         <li>Attract Attention</li>
@@ -132,7 +137,7 @@
             <div class="service-card">
                 <i class="fa-regular fa-window-maximize"></i>
                 <h3>Mannequins Styling</h3>
-                <img src="https://i.imgur.com/duFYuEz.jpeg" alt="Mannequins Styling">
+                <img src="https://i.imgur.com/duFYuEz.jpeg" alt="Mannequins Styling" loading="lazy" width="300" height="200">
                 <div class="service-details">
                     <ul>
                         <li>Highlight Promotions or New Arrivals</li>
@@ -152,28 +157,28 @@
         <div class="skills-grid">
             <div class="skill-card">
                 <div class="skill-icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png" alt="Adobe Photoshop">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png" alt="Adobe Photoshop" loading="lazy" width="80" height="80">
                 </div>
                 <h3>Adobe Photoshop</h3>
                 <p>Photo editing & design</p>
             </div>
             <div class="skill-card">
                 <div class="skill-icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Canva_icon_2021.svg/1200px-Canva_icon_2021.svg.png" alt="Canva">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Canva_icon_2021.svg/1200px-Canva_icon_2021.svg.png" alt="Canva" loading="lazy" width="80" height="80">
                 </div>
                 <h3>Canva</h3>
                 <p>Graphics & social media</p>
             </div>
             <div class="skill-card">
                 <div class="skill-icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_logo_%282019%E2%80%93present%29.svg.png" alt="Microsoft Office">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_logo_%282019%E2%80%93present%29.svg.png" alt="Microsoft Office" loading="lazy" width="80" height="80">
                 </div>
                 <h3>Microsoft Office</h3>
                 <p>Documentation & presentations</p>
             </div>
             <div class="skill-card">
                 <div class="skill-icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png" alt="Visual Studio Code">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png" alt="Visual Studio Code" loading="lazy" width="80" height="80">
                 </div>
                 <h3>Visual Studio Code</h3>
                 <p>Web development</p>
@@ -186,7 +191,7 @@
         <div class="about-container">
             <h2 class="hidden">About Me.</h2>
             <div class="about-image">
-                <img src="https://i.imgur.com/CFeqUmx.jpeg?w=800" alt="Syahdan Z S">
+                <img src="https://i.imgur.com/CFeqUmx.jpeg?w=800" alt="Syahdan Z S" loading="lazy" width="500" height="500">
             </div>
             <div class="about-content">
                 <div class="about-text">
@@ -206,8 +211,8 @@
                         </div>
                     </div>
                     <div class="clients-grid">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/8/8a/Cotton_On_logo.png" alt="Cotton:On">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Flying_Tiger_Copenhagen_logo.svg/1920px-Flying_Tiger_Copenhagen_logo.svg.png" alt="FlyingTiger">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/8/8a/Cotton_On_logo.png" alt="Cotton:On" loading="lazy" width="150" height="50">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Flying_Tiger_Copenhagen_logo.svg/1920px-Flying_Tiger_Copenhagen_logo.svg.png" alt="FlyingTiger" loading="lazy" width="150" height="50">
                     </div>
                     <a href="#" class="cta-button">Download Resume</a>
                 </div>
@@ -225,7 +230,7 @@
                     <span>Schedule a call</span>
                     <i class="fas fa-arrow-right"></i>
                 </a>
-                <p class="contact-email">or email me at <a href="mailto:syahdanzsgg@gmail.com">syahdanzsgg@gmail.com</a></p>
+                <p class="contact-email">or email me at <a href="mailto:syahdanzsgg&#64;gmail.com" aria-label="Send email">syahdanzsgg&#64;gmail.com</a></p>
             </div>
         </div>
     </section>
@@ -234,8 +239,8 @@
     <footer>
         <div class="footer-content">
             <div class="social-links">
-                <a href="https://linkedin.com/in/syahdan-z-s-478749246" class="social-hover"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/syahdanzs/" class="social-hover"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/syahdan-z-s-478749246" class="social-hover" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/syahdanzs/" class="social-hover" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
             <div class="footer-text">
                 <p>Made with <span class="heart">❤</span> by <span class="name">Syahdan Z S</span></p>

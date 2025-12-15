@@ -1139,7 +1139,13 @@ footer .social-links a:hover::before {
 .hero-content > *,
 section h2 {
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-    will-change: transform, opacity, filter;
+}
+
+/* Only apply will-change when animating (better performance) */
+.project-card:hover,
+.service-card:hover,
+.hidden {
+    will-change: transform, opacity;
 }
 
 /* Hero Section Animations */
@@ -2204,13 +2210,15 @@ nav {
     color: var(--text-secondary);
 }
 
-/* Add smooth transition for theme switching */
-body {
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-* {
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+/* Add smooth transition for theme switching - scoped to specific elements for performance */
+body,
+nav,
+.project-card,
+.service-card,
+.skill-card,
+.gallery-content,
+.cta-button {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 /* Gallery Styles */
