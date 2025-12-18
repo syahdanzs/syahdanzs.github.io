@@ -382,7 +382,11 @@ const initGallery = () => {
                     'https://i.imgur.com/2c7KUea.jpeg', //overview
                     'https://i.imgur.com/sZ1QfrV.jpeg',
                     'https://i.imgur.com/ZwIKZTr.jpeg',
+                    'https://i.imgur.com/GZy7HfG.jpeg',
+                    'https://i.imgur.com/ZBcmNOa.jpeg',
                     'https://i.imgur.com/JDzxRRY.jpeg', //cashier
+                    'https://i.imgur.com/QZOQ6gS.jpeg',
+                    'https://i.imgur.com/aUhmhSc.jpeg',
                     'https://i.imgur.com/aRAMLsa.jpeg', //window
                     'https://i.imgur.com/3iQcoKD.jpeg',
                     'https://i.imgur.com/3Md1M2f.jpeg',
@@ -394,18 +398,34 @@ const initGallery = () => {
                     'https://i.imgur.com/AkC2fFS.jpeg',
                     'https://i.imgur.com/wT6IB2l.jpeg',
                     'https://i.imgur.com/gzDUS8d.jpeg',
+                    'https://i.imgur.com/0RxXP8U.jpeg',
+                    'https://i.imgur.com/BIeG5G8.jpeg',
+                    'https://i.imgur.com/HRrSibw.jpeg',
+                    'https://i.imgur.com/11LdRrH.jpeg',
+                    'https://i.imgur.com/GZy7HfG.jpeg',
+                    'https://i.imgur.com/DUwmxSB.jpeg',
+                    'https://i.imgur.com/2dgUfvp.jpeg',
+                    'https://i.imgur.com/gu6xzmu.jpeg',
+                    'https://i.imgur.com/I5JDH14.jpeg',
                     'https://i.imgur.com/us36msk.jpeg', //wall
                     'https://i.imgur.com/7IF1qSL.jpeg',
+                    'https://i.imgur.com/KHWwOc0.jpeg',
+                    'https://i.imgur.com/y5h6Ya5.jpeg',
                     'https://i.imgur.com/ASLWID2.jpeg', //poster
-                    'https://i.imgur.com/qT12uRJ.jpeg'
+                    'https://i.imgur.com/qT12uRJ.jpeg',
+                    'https://i.imgur.com/zl1bSZg.jpeg'
                 ],
                 'Overview': [
                     'https://i.imgur.com/2c7KUea.jpeg',
                     'https://i.imgur.com/sZ1QfrV.jpeg',
-                    'https://i.imgur.com/ZwIKZTr.jpeg'
+                    'https://i.imgur.com/ZwIKZTr.jpeg',
+                    'https://i.imgur.com/GZy7HfG.jpeg',
+                    'https://i.imgur.com/ZBcmNOa.jpeg'
                 ],
                 'Cashier': [
-                    'https://i.imgur.com/JDzxRRY.jpeg'
+                    'https://i.imgur.com/JDzxRRY.jpeg',
+                    'https://i.imgur.com/QZOQ6gS.jpeg',
+                    'https://i.imgur.com/aUhmhSc.jpeg'
                 ],
                 'Window': [
                     'https://i.imgur.com/aRAMLsa.jpeg',
@@ -420,15 +440,27 @@ const initGallery = () => {
                     'https://i.imgur.com/62Y8SJh.jpeg',
                     'https://i.imgur.com/AkC2fFS.jpeg',
                     'https://i.imgur.com/wT6IB2l.jpeg',
-                    'https://i.imgur.com/gzDUS8d.jpeg'
+                    'https://i.imgur.com/gzDUS8d.jpeg',
+                    'https://i.imgur.com/0RxXP8U.jpeg',
+                    'https://i.imgur.com/BIeG5G8.jpeg',
+                    'https://i.imgur.com/HRrSibw.jpeg',
+                    'https://i.imgur.com/11LdRrH.jpeg',
+                    'https://i.imgur.com/GZy7HfG.jpeg',
+                    'https://i.imgur.com/DUwmxSB.jpeg',
+                    'https://i.imgur.com/2dgUfvp.jpeg',
+                    'https://i.imgur.com/gu6xzmu.jpeg',
+                    'https://i.imgur.com/I5JDH14.jpeg'
                 ],
                 'Wall': [
                     'https://i.imgur.com/us36msk.jpeg',
-                    'https://i.imgur.com/7IF1qSL.jpeg'
+                    'https://i.imgur.com/7IF1qSL.jpeg',
+                    'https://i.imgur.com/KHWwOc0.jpeg',
+                    'https://i.imgur.com/y5h6Ya5.jpeg'
                 ],
                 'Poster': [
                     'https://i.imgur.com/ASLWID2.jpeg',
-                    'https://i.imgur.com/qT12uRJ.jpeg'
+                    'https://i.imgur.com/qT12uRJ.jpeg',
+                    'https://i.imgur.com/zl1bSZg.jpeg'
                 ]
             },
             images: [] // This will be populated dynamically
