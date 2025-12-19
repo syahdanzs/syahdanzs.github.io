@@ -1,14 +1,22 @@
 // ===== KONFIGURASI DASAR =====
 // Cache DOM elements to avoid repeated queries
 const navElement = document.querySelector('nav');
-let cachedNavHeight = 0;
+let cachedNavHeight = 70; // Default fallback, updated after load
 
-// Update cached nav height on resize
+// Update cached nav height on resize (debounced)
+let resizeTimeout;
 const updateNavHeight = () => {
-    cachedNavHeight = navElement ? navElement.offsetHeight : 70;
+    if (resizeTimeout) clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+        cachedNavHeight = navElement ? navElement.offsetHeight : 70;
+    }, 100);
 };
+
+// Only query offsetHeight after page is fully loaded to avoid forced reflow
+window.addEventListener('load', () => {
+    cachedNavHeight = navElement ? navElement.offsetHeight : 70;
+});
 window.addEventListener('resize', updateNavHeight);
-window.addEventListener('load', updateNavHeight);
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
