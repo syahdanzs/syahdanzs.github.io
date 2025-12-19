@@ -422,8 +422,8 @@ nav.scroll-up {
 }
 
 .skill-icon img {
-    width: 100%;
-    height: auto;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
     filter: grayscale(30%);
     opacity: 0.85;

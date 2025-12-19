@@ -1,4 +1,15 @@
 // ===== KONFIGURASI DASAR =====
+// Cache DOM elements to avoid repeated queries
+const navElement = document.querySelector('nav');
+let cachedNavHeight = 0;
+
+// Update cached nav height on resize
+const updateNavHeight = () => {
+    cachedNavHeight = navElement ? navElement.offsetHeight : 70;
+};
+window.addEventListener('resize', updateNavHeight);
+window.addEventListener('load', updateNavHeight);
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -10,8 +21,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const target = document.querySelector(href);
         if (target) {
-            const navHeight = document.querySelector('nav').offsetHeight;
-            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+            // Use cached nav height to avoid forced reflow
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - cachedNavHeight;
             
             window.scrollTo({
                 top: targetPosition,
@@ -22,14 +33,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ===== NAVIGASI =====
-// Add scroll event listener for navbar
+// Add scroll event listener for navbar (throttled)
+let scrollTimeout;
 window.addEventListener('scroll', function() {
-    const nav = document.querySelector('nav');
-    if (window.scrollY > 50) {
-        nav.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)';
-    } else {
-        nav.style.boxShadow = 'none';
-    }
+    if (scrollTimeout) return;
+    scrollTimeout = setTimeout(() => {
+        scrollTimeout = null;
+        if (window.scrollY > 50) {
+            navElement.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)';
+        } else {
+            navElement.style.boxShadow = 'none';
+        }
+    }, 16);
 });
 
 // ===== MENU MOBILE =====
@@ -91,8 +106,8 @@ const createMobileMenu = () => {
 
         // Wait for menu close animation
         setTimeout(() => {
-            const navHeight = nav.offsetHeight;
-            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+            // Use cached nav height to avoid forced reflow
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - cachedNavHeight;
             
             window.scrollTo({
                 top: targetPosition,
