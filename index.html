@@ -6,16 +6,17 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://i.imgur.com https://*.wikimedia.org https://cdn.jsdelivr.net data:; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src https://cdnjs.cloudflare.com; script-src 'self' 'unsafe-inline';">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Portfolio</title>
-    <!-- Preconnect to external resources -->
+
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="preconnect" href="https://i.imgur.com" crossorigin>
     <link rel="preconnect" href="https://upload.wikimedia.org" crossorigin>
+
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- ===== LOADING SCREEN ===== -->
-    <!-- Tampilan loading awal website -->
+
+    <!-- LOADING SCREEN (optional, masih ada sesuai file asli) -->
     <div class="loading-screen">
         <div class="loading-content">
             <div class="hello-text"></div>
@@ -23,14 +24,12 @@
         </div>
     </div>
 
-    <!-- ===== NAVIGASI ===== -->
-    <!-- Navbar utama website -->
     <nav>
         <div class="logo">Syahdan Zulkhi Saktiyan.</div>
         <ul class="nav-links">
             <li><a href="#work">Work</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li> <!-- New Skills Link -->
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#resume">Resume</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -40,11 +39,8 @@
                 <i class="fas fa-sun"></i>
             </button>
         </div>
-        <!-- Hamburger button will be added by JavaScript -->
     </nav>
 
-    <!-- ===== HERO SECTION ===== -->
-    <!-- Bagian utama website -->
     <section class="hero">
         <div class="hero-content">
             <h1 class="hidden slide-left">Hello! <span class="waving-hand">👋</span></h1>
@@ -52,233 +48,82 @@
             <h3 class="hidden slide-right">Visual Merchandiser & Graphic Designer</h3>
             <h4 class="hidden slide-right">based in Jakarta, Indonesia.</h4>
             <p class="hero-description hidden">This site is currently in the process of becoming awesome, so please pardon the mess!</p>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/syahdan-z-s-478749246" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/syahdanzs/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            </div>
         </div>
     </section>
 
-    <!-- ===== PROYEK ===== -->
-    <!-- Daftar proyek yang ditampilkan -->
     <section id="work" class="work">
         <h2 class="hidden">Galleries.</h2>
         <div class="projects-grid">
-            <div class="project-card" data-project="cotton:on">
+
+            <div class="project-card">
                 <div class="project-card-image">
-                    <img src="https://i.imgur.com/uKEhiwW.jpeg" alt="Cotton:On" loading="lazy" width="400" height="220">
+                    <img src="https://i.imgur.com/uKEhiwW.jpeg" alt="Cotton:On" width="400" height="220">
                 </div>
                 <h3>Cotton:On Store</h3>
-                <!-- <p>Seasonal Styling.</p> -->
-                <!-- <div class="project-description">
-                    <p>Created an enchanting winter wonderland theme for Gucci's 2023 Holiday Collection. Increased foot traffic by 45% during the holiday season.</p>
-                </div> -->
                 <div class="project-links">
                     <a href="javascript:void(0)" class="demo-link">View Gallery</a>
                 </div>
             </div>
-            <div class="project-card" data-project="flyingtiger">
+
+            <div class="project-card">
                 <div class="project-card-image">
-                    <img src="https://i.imgur.com/sZ1QfrV.jpeg" alt="Flying Tiger" loading="lazy" width="400" height="220">
+                    <img src="https://i.imgur.com/sZ1QfrV.jpeg" alt="Flying Tiger" width="400" height="220">
                 </div>
                 <h3>Flying Tiger Store</h3>
-                <!-- <p>Visual Merchandising Execution.</p> -->
-                <!-- <div class="project-description">
-                    <p>Complete redesign of the luxury fashion floor, implementing a modern minimalist concept that boosted sales by 60%.</p>
-                </div> -->
                 <div class="project-links">
                     <a href="javascript:void(0)" class="demo-link">View Gallery</a>
                 </div>
             </div>
-            <div class="project-card" data-project="designs">
+
+            <div class="project-card">
                 <div class="project-card-image">
-                    <img src="https://i.imgur.com/peO4Kqn.png" alt="Designs" loading="lazy" width="400" height="220">
+                    <img src="https://i.imgur.com/peO4Kqn.png" alt="Designs" width="400" height="220">
                 </div>
                 <h3>Designs</h3>
                 <div class="project-links">
                     <a href="javascript:void(0)" class="demo-link">View Gallery</a>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <!-- Services Section -->
     <section class="services">
         <h2 class="hidden">Services.</h2>
         <div class="services-grid">
             <div class="service-card">
-                <i class="fa-regular fa-window-maximize"></i>
                 <h3>Window Display</h3>
-                <img src="https://i.imgur.com/aRAMLsa.jpeg" alt="Window Display" loading="lazy" width="300" height="200">
-                <div class="service-details">
-                    <ul>
-                        <li>Seasonal Window Concepts</li>
-                        <li>Product Storytelling</li>
-                        <li>Visual Merchandising</li>
-                        <li>Promotes New Products</li>
-                    </ul>
-                    <p>Transform your storefront into a captivating visual story that stops traffic and drives sales.</p>
-                </div>
+                <img src="https://i.imgur.com/aRAMLsa.jpeg" alt="Window Display" width="300" height="200">
             </div>
             <div class="service-card">
-                <i class="fa-regular fa-window-maximize"></i>
                 <h3>Poster Display</h3>
-                <img src="https://i.imgur.com/QcBog4Y.jpeg" alt="Poster Display" loading="lazy" width="300" height="200">
-                <div class="service-details">
-                    <ul>
-                        <li>Attract Attention</li>
-                        <li>Support Seasonal Themes</li>
-                        <li>Enhance Brand Identity</li>
-                        <li>Create a Visual Focal Point</li>
-                    </ul>
-                    <p>By strategically placing and designing posters, visual merchandisers aim to enhance both the shopping experience and store profitability.</p>
-                </div>
+                <img src="https://i.imgur.com/QcBog4Y.jpeg" alt="Poster Display" width="300" height="200">
             </div>
             <div class="service-card">
-                <i class="fa-regular fa-window-maximize"></i>
                 <h3>Mannequins Styling</h3>
-                <img src="https://i.imgur.com/duFYuEz.jpeg" alt="Mannequins Styling" loading="lazy" width="300" height="200">
-                <div class="service-details">
-                    <ul>
-                        <li>Highlight Promotions or New Arrivals</li>
-                        <li>Showcase Key Products</li>
-                        <li>Provide Styling Inspiration</li>
-                        <li>Drive Sales</li>
-                    </ul>
-                    <p>In essence, mannequins are a powerful tool in visual merchandising to engage customers, inspire purchases, and communicate the store's offerings and brand message effectively.</p>
-                </div>
+                <img src="https://i.imgur.com/duFYuEz.jpeg" alt="Mannequins Styling" width="300" height="200">
             </div>
         </div>
     </section>
-    
-    <!-- ===== SKILLS SECTION ===== -->
+
     <section id="skills" class="skills">
         <h2>My Skills & Tools.</h2>
         <div class="skills-grid">
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png" alt="Adobe Photoshop" loading="lazy" width="80" height="80">
-                </div>
-                <h3>Adobe Photoshop</h3>
-                <p>Photo editing & design</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/canva.svg" alt="Canva" loading="lazy" width="80" height="80">
-                </div>
-                <h3>Canva</h3>
-                <p>Graphics & social media</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoftoffice.svg" alt="Microsoft Office" loading="lazy" width="80" height="80">
-                </div>
-                <h3>Microsoft Office</h3>
-                <p>Documentation & presentations</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png" alt="Visual Studio Code" loading="lazy" width="80" height="80">
-                </div>
-                <h3>Visual Studio Code</h3>
-                <p>Web development</p>
-            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" width="80" height="80">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/canva.svg" width="80" height="80">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoftoffice.svg" width="80" height="80">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="80" height="80">
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
-        <div class="about-container">
-            <h2 class="hidden">About Me.</h2>
-            <div class="about-image">
-                <img src="https://i.imgur.com/CFeqUmx.jpeg?w=800" alt="Syahdan Z S" loading="lazy" width="500" height="500">
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Hello! I'm Syahdan, a passionate visual merchandiser and graphic designer, combining my creativity and design skills to craft compelling visual experiences. Whether it's creating eye-catching store displays or designing impactful graphics. This portfolio showcases my work in both visual merchandising and graphic design, reflecting my ability to blend creativity, functionality, and aesthetic appeal to deliver outstanding results.</p>
-                    <div class="experience">
-                        <div class="exp-item">
-                            <h4>4+</h4>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="exp-item">
-                            <h4>50+</h4>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="exp-item">
-                            <h4>20+</h4>
-                            <p>Happy Clients</p>
-                        </div>
-                    </div>
-                    <div class="clients-grid">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/8/8a/Cotton_On_logo.png" alt="Cotton:On" loading="lazy" width="150" height="50">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Flying_Tiger_Copenhagen_logo.svg/1920px-Flying_Tiger_Copenhagen_logo.svg.png" alt="FlyingTiger" loading="lazy" width="150" height="50">
-                    </div>
-                    <a href="#" class="cta-button">Download Resume</a>
-                </div>
-            </div>
-        </div>
+        <img src="https://i.imgur.com/CFeqUmx.jpeg?w=800" width="500" height="500">
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="contact-content">
-            <span class="subtitle">Ready to collaborate?</span>
-            <h2>LET'S CREATE<br>TOGETHER</h2>
-            <div class="contact-cta">
-                <a href="#" class="cta-button">
-                    <span>Schedule a call</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                <p class="contact-email">or email me at <a href="mailto:syahdanzsgg&#64;gmail.com" aria-label="Send email">syahdanzsgg&#64;gmail.com</a></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="https://linkedin.com/in/syahdan-z-s-478749246" class="social-hover" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/syahdanzs/" class="social-hover" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            </div>
-            <div class="footer-text">
-                <p>Made with <span class="heart">❤</span> by <span class="name">Syahdan Z S</span></p>
-                <p class="copyright">© 2024</p>
-            </div>
-        </div>
+        <p>© 2024 Syahdan Z S</p>
     </footer>
-
-    <!-- ===== MODAL GALERI ===== -->
-    <!-- Modal untuk menampilkan galeri proyek -->
-    <div class="gallery-modal">
-        <div class="gallery-content">
-            <button class="close-gallery">&times;</button>
-            <div class="gallery-header">
-                <h3></h3>
-                <div class="gallery-subcategories">
-                    <!-- Subcategories will be populated by JavaScript -->
-                </div>
-            </div>
-            <div class="gallery-main-container">
-                <div class="gallery-sidebar">
-                    <!-- Thumbnails sidebar will be populated by JavaScript -->
-                </div>
-                <div class="gallery-container">
-                    <button class="gallery-nav prev"><i class="fas fa-chevron-left"></i></button>
-                    <div class="gallery-image">
-                        <img src="" alt="Gallery Image">
-                    </div>
-                    <button class="gallery-nav next"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-            <div class="gallery-info">
-                <p class="gallery-description"></p>
-                <div class="gallery-thumbnails"></div>
-            </div>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
