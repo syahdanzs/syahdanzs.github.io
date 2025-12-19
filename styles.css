@@ -82,6 +82,19 @@ nav.scroll-up {
     color: #a7a7a7;
 }
 
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.hero-location {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
 .hero-content h4 {
     font-size: 1.5rem;
     color: #666;
@@ -2087,7 +2100,7 @@ body.loading {
     --bg-primary: #ffffff;
     --bg-secondary: #f5f5f5;
     --text-primary: #1a1a1a;
-    --text-secondary: #4a4a4a;
+    --text-secondary: #595959;
     --accent: #2a2a2a;
     --border: #e0e0e0;
     --card-bg: #ffffff;
@@ -2107,7 +2120,7 @@ body.loading {
     --bg-primary: #1a1a1a;
     --bg-secondary: #222222;
     --text-primary: #f5f5f5;
-    --text-secondary: #b0b0b0;
+    --text-secondary: #d0d0d0;
     --accent: #e0e0e0;
     --border: #333333;
     --card-bg: #252525;

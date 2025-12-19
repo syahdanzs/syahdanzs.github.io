@@ -329,156 +329,151 @@ const initGallery = () => {
     const galleryData = {
         'cotton:on': {
             title: 'Cotton:On',
-            // description: 'Winter holiday window display featuring an enchanting wonderland theme. Created a magical retail experience that increased foot traffic by 45% during the holiday season.',
             subcategories: {
                 'All': [
-                    'https://i.imgur.com/uKEhiwW.jpeg', //overview
-                    'https://i.imgur.com/C3DXy8t.jpeg',
-                    'https://i.imgur.com/B2oZMNk.jpeg',
-                    'https://i.imgur.com/EQlShAa.jpeg', //sale
-                    'https://i.imgur.com/y3gC4RS.jpeg',
-                    'https://i.imgur.com/GyFw4yT.jpeg', //ladies
-                    'https://i.imgur.com/asoqE46.jpeg',
-                    'https://i.imgur.com/Ta4P9Gu.jpeg',
-                    'https://i.imgur.com/XPKG4Ig.jpeg', //mens
-                    'https://i.imgur.com/4h76kOT.jpeg',
-                    'https://i.imgur.com/2yWdaAW.jpeg',
-                    'https://i.imgur.com/SwAG4zX.jpeg', //rubi
-                    'https://i.imgur.com/m5csiqy.jpeg',
-                    'https://i.imgur.com/9WPqRVB.jpeg'
+                    'images/cottonon/window/1.avif',
+                    'images/cottonon/window/2.avif',
+                    'images/cottonon/window/3.avif',
+                    'images/cottonon/sale/1.avif',
+                    'images/cottonon/sale/2.avif',
+                    'images/cottonon/ladies/1.avif',
+                    'images/cottonon/ladies/2.avif',
+                    'images/cottonon/ladies/3.avif',
+                    'images/cottonon/mens/1.avif',
+                    'images/cottonon/mens/2.avif',
+                    'images/cottonon/mens/3.avif',
+                    'images/cottonon/rubi/1.avif',
+                    'images/cottonon/rubi/2.avif',
+                    'images/cottonon/rubi/3.avif'
                 ],
                 'Window': [
-                    'https://i.imgur.com/uKEhiwW.jpeg',
-                    'https://i.imgur.com/C3DXy8t.jpeg',
-                    'https://i.imgur.com/B2oZMNk.jpeg'
+                    'images/cottonon/window/1.avif',
+                    'images/cottonon/window/2.avif',
+                    'images/cottonon/window/3.avif'
                 ],
                 'Sale': [
-                    'https://i.imgur.com/EQlShAa.jpeg',
-                    'https://i.imgur.com/y3gC4RS.jpeg'
+                    'images/cottonon/sale/1.avif',
+                    'images/cottonon/sale/2.avif'
                 ],
                 'Ladies': [
-                    'https://i.imgur.com/GyFw4yT.jpeg',
-                    'https://i.imgur.com/asoqE46.jpeg',
-                    'https://i.imgur.com/Ta4P9Gu.jpeg'
+                    'images/cottonon/ladies/1.avif',
+                    'images/cottonon/ladies/2.avif',
+                    'images/cottonon/ladies/3.avif'
                 ],
                 'Mens': [
-                    'https://i.imgur.com/XPKG4Ig.jpeg',
-                    'https://i.imgur.com/4h76kOT.jpeg',
-                    'https://i.imgur.com/2yWdaAW.jpeg'
+                    'images/cottonon/mens/1.avif',
+                    'images/cottonon/mens/2.avif',
+                    'images/cottonon/mens/3.avif'
                 ],
                 'Rubi': [
-                    'https://i.imgur.com/SwAG4zX.jpeg',
-                    'https://i.imgur.com/m5csiqy.jpeg',
-                    'https://i.imgur.com/9WPqRVB.jpeg'
+                    'images/cottonon/rubi/1.avif',
+                    'images/cottonon/rubi/2.avif',
+                    'images/cottonon/rubi/3.avif'
                 ]
             },
-            images: []  // This will be populated dynamically
+            images: []
         },
         'flyingtiger': {
             title: 'Flying Tiger',
-            // description: 'Complete redesign of the luxury fashion floor with modern minimalist concept. Implemented strategic layout changes that resulted in 60% increase in sales.',
             subcategories: {
                 'All': [
-                    'https://i.imgur.com/2c7KUea.jpeg', //overview
-                    'https://i.imgur.com/sZ1QfrV.jpeg',
-                    'https://i.imgur.com/ZwIKZTr.jpeg',
-                    'https://i.imgur.com/GZy7HfG.jpeg',
-                    'https://i.imgur.com/ZBcmNOa.jpeg',
-                    'https://i.imgur.com/JDzxRRY.jpeg', //cashier
-                    'https://i.imgur.com/QZOQ6gS.jpeg',
-                    'https://i.imgur.com/aUhmhSc.jpeg',
-                    'https://i.imgur.com/aRAMLsa.jpeg', //window
-                    'https://i.imgur.com/3iQcoKD.jpeg',
-                    'https://i.imgur.com/3Md1M2f.jpeg',
-                    'https://i.imgur.com/0qSP0lB.jpeg', //table
-                    'https://i.imgur.com/j6YwdF0.jpeg',
-                    'https://i.imgur.com/rd3H1Yq.jpeg',
-                    'https://i.imgur.com/GkTizAx.jpeg',
-                    'https://i.imgur.com/62Y8SJh.jpeg',
-                    'https://i.imgur.com/AkC2fFS.jpeg',
-                    'https://i.imgur.com/wT6IB2l.jpeg',
-                    'https://i.imgur.com/gzDUS8d.jpeg',
-                    'https://i.imgur.com/0RxXP8U.jpeg',
-                    'https://i.imgur.com/BIeG5G8.jpeg',
-                    'https://i.imgur.com/HRrSibw.jpeg',
-                    'https://i.imgur.com/11LdRrH.jpeg',
-                    'https://i.imgur.com/GZy7HfG.jpeg',
-                    'https://i.imgur.com/DUwmxSB.jpeg',
-                    'https://i.imgur.com/2dgUfvp.jpeg',
-                    'https://i.imgur.com/gu6xzmu.jpeg',
-                    'https://i.imgur.com/I5JDH14.jpeg',
-                    'https://i.imgur.com/us36msk.jpeg', //wall
-                    'https://i.imgur.com/7IF1qSL.jpeg',
-                    'https://i.imgur.com/KHWwOc0.jpeg',
-                    'https://i.imgur.com/y5h6Ya5.jpeg',
-                    'https://i.imgur.com/ASLWID2.jpeg', //poster
-                    'https://i.imgur.com/qT12uRJ.jpeg',
-                    'https://i.imgur.com/zl1bSZg.jpeg'
+                    'images/flyingtiger/overview/1.avif',
+                    'images/flyingtiger/overview/2.avif',
+                    'images/flyingtiger/overview/3.avif',
+                    'images/flyingtiger/overview/4.avif',
+                    'images/flyingtiger/cashier/1.avif',
+                    'images/flyingtiger/cashier/2.avif',
+                    'images/flyingtiger/cashier/3.avif',
+                    'images/flyingtiger/window/1.avif',
+                    'images/flyingtiger/window/2.avif',
+                    'images/flyingtiger/window/3.avif',
+                    'images/flyingtiger/table/1.jpg',
+                    'images/flyingtiger/table/2.jpg',
+                    'images/flyingtiger/table/3.jpg',
+                    'images/flyingtiger/table/4.jpg',
+                    'images/flyingtiger/table/5.jpg',
+                    'images/flyingtiger/table/6.jpg',
+                    'images/flyingtiger/table/7.jpg',
+                    'images/flyingtiger/table/8.jpg',
+                    'images/flyingtiger/table/9.jpg',
+                    'images/flyingtiger/table/10.jpg',
+                    'images/flyingtiger/table/11.jpg',
+                    'images/flyingtiger/table/12.jpg',
+                    'images/flyingtiger/table/13.jpg',
+                    'images/flyingtiger/table/14.jpg',
+                    'images/flyingtiger/table/15.jpg',
+                    'images/flyingtiger/table/16.jpg',
+                    'images/flyingtiger/table/17.jpg',
+                    'images/flyingtiger/wall/1.avif',
+                    'images/flyingtiger/wall/2.avif',
+                    'images/flyingtiger/wall/3.avif',
+                    'images/flyingtiger/wall/4.avif',
+                    'images/flyingtiger/poster/1.avif',
+                    'images/flyingtiger/poster/2.avif',
+                    'images/flyingtiger/poster/3.avif'
                 ],
                 'Overview': [
-                    'https://i.imgur.com/2c7KUea.jpeg',
-                    'https://i.imgur.com/sZ1QfrV.jpeg',
-                    'https://i.imgur.com/ZwIKZTr.jpeg',
-                    'https://i.imgur.com/GZy7HfG.jpeg',
-                    'https://i.imgur.com/ZBcmNOa.jpeg'
+                    'images/flyingtiger/overview/1.avif',
+                    'images/flyingtiger/overview/2.avif',
+                    'images/flyingtiger/overview/3.avif',
+                    'images/flyingtiger/overview/4.avif'
                 ],
                 'Cashier': [
-                    'https://i.imgur.com/JDzxRRY.jpeg',
-                    'https://i.imgur.com/QZOQ6gS.jpeg',
-                    'https://i.imgur.com/aUhmhSc.jpeg'
+                    'images/flyingtiger/cashier/1.avif',
+                    'images/flyingtiger/cashier/2.avif',
+                    'images/flyingtiger/cashier/3.avif'
                 ],
                 'Window': [
-                    'https://i.imgur.com/aRAMLsa.jpeg',
-                    'https://i.imgur.com/3iQcoKD.jpeg',
-                    'https://i.imgur.com/3Md1M2f.jpeg'
+                    'images/flyingtiger/window/1.avif',
+                    'images/flyingtiger/window/2.avif',
+                    'images/flyingtiger/window/3.avif'
                 ],
                 'Table': [
-                    'https://i.imgur.com/0qSP0lB.jpeg',
-                    'https://i.imgur.com/j6YwdF0.jpeg',
-                    'https://i.imgur.com/rd3H1Yq.jpeg',
-                    'https://i.imgur.com/GkTizAx.jpeg',
-                    'https://i.imgur.com/62Y8SJh.jpeg',
-                    'https://i.imgur.com/AkC2fFS.jpeg',
-                    'https://i.imgur.com/wT6IB2l.jpeg',
-                    'https://i.imgur.com/gzDUS8d.jpeg',
-                    'https://i.imgur.com/0RxXP8U.jpeg',
-                    'https://i.imgur.com/BIeG5G8.jpeg',
-                    'https://i.imgur.com/HRrSibw.jpeg',
-                    'https://i.imgur.com/11LdRrH.jpeg',
-                    'https://i.imgur.com/GZy7HfG.jpeg',
-                    'https://i.imgur.com/DUwmxSB.jpeg',
-                    'https://i.imgur.com/2dgUfvp.jpeg',
-                    'https://i.imgur.com/gu6xzmu.jpeg',
-                    'https://i.imgur.com/I5JDH14.jpeg'
+                    'images/flyingtiger/table/1.jpg',
+                    'images/flyingtiger/table/2.jpg',
+                    'images/flyingtiger/table/3.jpg',
+                    'images/flyingtiger/table/4.jpg',
+                    'images/flyingtiger/table/5.jpg',
+                    'images/flyingtiger/table/6.jpg',
+                    'images/flyingtiger/table/7.jpg',
+                    'images/flyingtiger/table/8.jpg',
+                    'images/flyingtiger/table/9.jpg',
+                    'images/flyingtiger/table/10.jpg',
+                    'images/flyingtiger/table/11.jpg',
+                    'images/flyingtiger/table/12.jpg',
+                    'images/flyingtiger/table/13.jpg',
+                    'images/flyingtiger/table/14.jpg',
+                    'images/flyingtiger/table/15.jpg',
+                    'images/flyingtiger/table/16.jpg',
+                    'images/flyingtiger/table/17.jpg'
                 ],
                 'Wall': [
-                    'https://i.imgur.com/us36msk.jpeg',
-                    'https://i.imgur.com/7IF1qSL.jpeg',
-                    'https://i.imgur.com/KHWwOc0.jpeg',
-                    'https://i.imgur.com/y5h6Ya5.jpeg'
+                    'images/flyingtiger/wall/1.avif',
+                    'images/flyingtiger/wall/2.avif',
+                    'images/flyingtiger/wall/3.avif',
+                    'images/flyingtiger/wall/4.avif'
                 ],
                 'Poster': [
-                    'https://i.imgur.com/ASLWID2.jpeg',
-                    'https://i.imgur.com/qT12uRJ.jpeg',
-                    'https://i.imgur.com/zl1bSZg.jpeg'
+                    'images/flyingtiger/poster/1.avif',
+                    'images/flyingtiger/poster/2.avif',
+                    'images/flyingtiger/poster/3.avif'
                 ]
             },
-            images: [] // This will be populated dynamically
+            images: []
         },
         'designs': {
             title: 'Designs',
-            // description: 'Complete redesign of the luxury fashion floor with modern minimalist concept. Implemented strategic layout changes that resulted in 60% increase in sales.',
             subcategories: {
                 'All': [
-                    'https://i.imgur.com/6mAWKN5.png',
-                    'https://i.imgur.com/xLNH0Tr.png',
-                    'https://i.imgur.com/uaWChEp.png',
-                    'https://i.imgur.com/GhLKs87.png',
-                    'https://i.imgur.com/fs69mdQ.png',
-                    'https://i.imgur.com/P7sU6nc.png'
+                    'images/designs/1.avif',
+                    'images/designs/2.avif',
+                    'images/designs/3.avif',
+                    'images/designs/4.avif',
+                    'images/designs/5.avif',
+                    'images/designs/6.avif'
                 ]
             },
-            images: [] // This will be populated dynamically
+            images: []
         }
     };
 
